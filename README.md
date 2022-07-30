@@ -16,13 +16,16 @@ To implement a neural network and optimized neural network in order to develope 
     1) How many neurons, layers, and activation functions did you select for your neural network model, and why?
     Chose 80 neurons, with two hidden layers. The hope was the the increase of nuerons and hidden layers would result in better accuracy. The activation funtions chosen were relu and sigmoid. Used relu due to its celerity and simplicity. Sigmoid was also chosen as it exists between 0-1 and is common in predicitive models. 
     2) Were you able to achieve the target model performance?
-    Unfortunaley, I was not able to get a lower loss. However, I was able to achieve a slighly higher accuracy of 58%. The model still needs to optimized to reach at least 75%, however, 95% accuracy is the goal. 
+    Unfortunaley, I was not able to get a higher accuracy. However, I was able to achieve a slighly lower loss of 69%. The model still needs to optimized to reach at least an accuracy of 75%, however, 95% accuracy is the goal. Maintaining a loss of .05 is also optimal
     3) What steps did you take to try and increase model performance?
       - dropped columns STATUS" & SPECIAL_CONSIDERATIONS in addition to EIN & NAME columns
-      - Added a third hidden layer
-      - changed output activation function to relu to see any differences 
+      - Added a third hidden layer and changed my nuerons. 
+      - changed output activation functions in my hidden layers to sigmoid and my output layer to relu to see any differences. 
  
 ## Summary: 
 
+Through the removal of additional features and utlizing diferent amounts of neurons and their functions, the loss of the optimized model was reduced by ~ 10%. However, the accuracy fell ~ 5%. This may be due to the extra features dropped and the additional third layer. 
+
+In the future, a random forest model as it will alleviate the issues with overfitting the data. 
     
     
